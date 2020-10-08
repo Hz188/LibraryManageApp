@@ -166,13 +166,15 @@ class SignUp(QWidget):
 
             return
         else:  # 需要处理逻辑，1.账号已存在;2.密码没两遍输对;3.注册成功插入user表
-            db = QSqlDatabase.addDatabase("QMYSQL")
-            db.setHostName("localhost")
+            db = QSqlDatabase.addDatabase('QMYSQL')
+            db.setHostName('localhost')
             db.setPort(3306)
-            db.setUserName("root")
-            db.setPassword("123456")
-            db.setDatabaseName("library")
-            db.open()
+            db.setDatabaseName('library')
+            db.setUserName('root')
+            db.setPassword('123456')
+            a = db.open()
+            print(a)
+
             query = QSqlQuery()
             if (confirmPassword != password):
                 QMessageBox.warning(self, "警告", "两次输入密码不一致，请重新输入",

@@ -34,7 +34,7 @@ class addBookDialog(QDialog):
         self.resize(300, 400)
         self.layout = QFormLayout()
         self.setLayout(self.layout)
-
+        
         # Label控件 显示文本
         self.titlelabel = QLabel("  添加书籍")
         self.bookNameLabel = QLabel("书    名:")
