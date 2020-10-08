@@ -1,0 +1,63 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+            "name": "Python3",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "H:\\PythonProject\\LibraryManageApp\\VirEnv\\Scripts\\python.exe", //python3的安装路径 
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": [
+                "RedirectOutput"
+            ]
+        },
+        {
+            "name": "Python: Terminal (integrated)",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "H:\\PythonProject\\LibraryManageApp\\VirEnv\\Scripts\\python.exe",
+            "program": "${file}",
+            "cwd": "",
+            "console": "integratedTerminal",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": []
+        },
+        {
+            "name": "Python: Terminal (external)",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "H:\\PythonProject\\LibraryManageApp\\VirEnv\\Scripts\\python.exe",
+            "program": "${file}",
+            "cwd": "",
+            "console": "externalTerminal",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": []
+        },
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "pythonPath": "H:\\PythonProject\\LibraryManageApp\\VirEnv\\Scripts\\python.exe",
+            "program": "${workspaceFolder}/manage.py",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "runserver",
+                "--noreload",
+                "--nothreading"
+            ],
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": [
+                "RedirectOutput",
+                "Django"
+            ]
+        },
+    }
