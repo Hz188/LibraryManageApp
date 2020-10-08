@@ -1,7 +1,7 @@
-.idea/
-__pycache__/
-.vscode/
-VirEnv/
+.idea/*.*
+__pycache__/*.*
+.vscode/*.*
+VirEnv/*
 .virtualenv.code-workspace
-dist/
-build/
+dist/*
+build/*
