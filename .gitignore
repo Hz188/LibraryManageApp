@@ -2,6 +2,6 @@
 __pycache__/
 .vscode/
 VirEnv/
-.virtualenv.code-workspace
+virtualenv.code-workspace
 dist/
 build/
